@@ -1,7 +1,6 @@
 ../.idea/
 ../myenv/
 *.pytest_cache
-*.sqlite3
 *.log
 */__pycache__/*
 /myenv/
