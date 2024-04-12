@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from beerbar_api.views import get_stock, get_order
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('api/order/<order_id>', get_order, name='get_order'),
+    path('api/stock', get_stock, name='get_stock'),
 ]
